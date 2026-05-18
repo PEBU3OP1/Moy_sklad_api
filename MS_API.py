@@ -1,9 +1,12 @@
 import json
-
+import os
 import requests
+from dotenv import load_dotenv
 
-token = '9ac31b28b78eb109d8714c6fac7d5c551aeeed74'
-
+load_dotenv()
+token = os.getenv('TOKEN_MS')
+print(token)
+exit()
 url = 'https://api.moysklad.ru/api/remap/1.2/entity/assortment'
 goods_url = 'url = "https://api.moysklad.ru/api/remap/1.2/entity/product'
 
