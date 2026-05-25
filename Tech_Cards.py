@@ -46,7 +46,7 @@ class Tech_Cards(Base):
                             }
                         }
                         materials_list.append(one_material_dict)
-                if 'product' in key:
+                elif 'product_article' in key:
                     one_product_dict = {
                         'quantity': row[str(key).replace('article', 'quantity')],
                         'assortment': {
@@ -63,8 +63,7 @@ class Tech_Cards(Base):
             'materials': materials_list,
             'products': products_list
         }
-        print(card_params)
-        exit()
+
         response = self.post_request_to_ms(url=self.techcards_url, body_json=card_params)
         print(response)
 
