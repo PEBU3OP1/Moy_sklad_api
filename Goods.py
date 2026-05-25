@@ -40,7 +40,7 @@ class Goods(Base):
         # print(json.dumps(products_json, ensure_ascii=False, indent=4))
         if products_json:
             for product in products_json['rows']:
-                print(product['id'])
+                return product['id']
 
 
 

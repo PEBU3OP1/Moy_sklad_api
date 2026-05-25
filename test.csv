@@ -1,2 +1,2 @@
-"tech_card_name	material_1	quantity_1	material_2	quantity_2	material_3	quantity_3	material_4	quantity_4	material_5	quantity_5	product	product_quantity"
-"test_card	banan_ueban	1	dddd_330mm	1	IC5_red_ttest	1	skooobs_001	1			IIICCCOOO3	1"
+tech_card_name;material_article_1;material_quantity_1;material_article_2;material_quantity_2;material_article_3;material_quantity_3;material_article_4;material_quantity_4;material_article_5;material_quantity_5;product_article;product_quantity
+test_card;banan_ueban;1;dddd_330mm;1;IC5_red_ttest;1;skooobs_001;1;;;IIICCCOOO3;1
