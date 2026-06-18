@@ -3,7 +3,7 @@ import os
 import requests
 from dotenv import load_dotenv
 from Base import Base
-
+import pandas as pd
 
 class Goods(Base):
     def __init__(self):
@@ -41,12 +41,20 @@ class Goods(Base):
         if products_json:
             for product in products_json['rows']:
                 return product['id']
+        else:
+            return
 
 
+    def get_ids_from_file(self):
+        df = pd.read_csv('techcards.csv', sep=';', encoding = 'cp1251')
+        test_set = set(df['Выходное изделие'].tolist())
+        for i, art in enumerate(test_set):
 
-
+            if not self.get_product_id(art):
+                print(art)
 
 # Goods().get_product_id('banan_ueban')
 # Goods().add_new_product()
 # Goods().get_product_folders()
 # Goods().get_uom()
+Goods().get_ids_from_file()

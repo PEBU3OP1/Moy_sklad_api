@@ -69,4 +69,4 @@ class Tech_Cards(Base):
 
 
 # Tech_Cards().add_cards()
-Tech_Cards().add_card()
+# Tech_Cards().add_card()
